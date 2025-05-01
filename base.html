@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        {% include 'head.html' %}
+    <body class="bg-gray-100">
+        {% include 'header.html' %}
+
+        {% block content %}{% endblock %}
+        {% include 'footer.html' %}
+        {% include 'scripts.html' %}
+        {% block extra_scripts %}{% endblock %}
+    </body>
+</html>
